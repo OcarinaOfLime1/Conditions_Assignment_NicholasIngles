@@ -78,18 +78,21 @@ else if (input == "2")
     }
     catch
     {
-
-
         Console.WriteLine("\nAn error occured. Please try again.");
     }
-
-    
-
 }
 else if (input == "3")
 {
-    Console.WriteLine("kapow");
+    Console.Write("\nLeap Year Checker selected.\nEnter year: ");
+    string stringyear = Console.ReadLine();
+    try
+    {
 
+    }
+    catch
+    {
+        Console.WriteLine("\nAn error occured. Please try again.");
+    }
 }
 else if (input == "4")
 {

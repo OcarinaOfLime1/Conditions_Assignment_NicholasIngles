@@ -87,7 +87,9 @@ else if (input == "3")
     string stringyear = Console.ReadLine();
     try
     {
-
+        int year = int.Parse(stringyear);
+        bool isLeapYear = year % 4 == 0;
+        Console.WriteLine(isLeapYear);
     }
     catch
     {

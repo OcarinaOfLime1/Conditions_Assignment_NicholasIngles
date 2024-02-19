@@ -125,12 +125,6 @@ else if (input == "4")
     {
         Console.WriteLine("An error occured. Please try again.");
     }
-
-
-
-
-
-
 }
 else if (input == "5")
 {

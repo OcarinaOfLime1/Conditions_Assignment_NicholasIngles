@@ -130,7 +130,15 @@ else if (input == "5")
 {
     Console.WriteLine("\nRock, Paper, Scissors Game selected.\nRock, Paper, or Scissors?");
     string usermove = Console.ReadLine();
+    bool userrock = false;
+    bool userpaper = false;
+    bool userscissors = false;
+    Random aimove = new Random();
+    Console.WriteLine(aimove.Next(3));
+    if (aimove = 0)
 
+
+    
 }
 else
 {

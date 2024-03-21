@@ -164,59 +164,67 @@ public partial class Program
                 bool aiscissors = false;
                 Random variable = new Random();
                 int aimove = variable.Next(1, 4);
-
                 if (aimove == 1)
                 {
-                    userrock = true;
+                    airock = true;
                 }
                 else if (aimove == 2)
                 {
-                    userpaper = true;
+                    aipaper = true;
                 }
                 else if (aimove == 3)
                 {
-                    userscissors = true;
-                }
+                    aiscissors = true;
+            }
                 else
                 {
                     Console.WriteLine("\nAn error occurred. Please try again.");
                 }
 
-                if (userrock == true && airock == true)
+                if (userrock && airock)
                 {
+                    Console.WriteLine("Rock");
                     Console.WriteLine("\nTie! Try again.");
                 }
-                else if (userpaper == true && aipaper == true)
+                else if (userpaper && aipaper)
                 {
+                Console.WriteLine("Paper");
                     Console.WriteLine("\nTie! Try again.");
                 }
-                else if (userscissors == true && aiscissors == true)
+                else if (userscissors && aiscissors)
                 {
+                Console.WriteLine("Scissors");
                     Console.WriteLine("\nTie! Try again.");
                 }
-                else if (userrock == true && aipaper == true)
+                else if (userrock && aipaper)
                 {
-                    Console.WriteLine("\nAI wins! Try again.");
+                Console.WriteLine("Paper");
+                Console.WriteLine("\nAI wins! Try again.");
                 }
-                else if (userpaper == true && aiscissors == true)
+                else if (userpaper && aiscissors)
                 {
-                    Console.WriteLine("\nAI wins! Try again.");
+                Console.WriteLine("Scissors");
+                Console.WriteLine("\nAI wins! Try again.");
                 }
-                else if (userscissors == true && airock == true)
+                else if (userscissors && airock)
                 {
-                    Console.WriteLine("\nAI wins! Try again.");
+                Console.WriteLine("Rock");
+                Console.WriteLine("\nAI wins! Try again.");
                 }
-                else if (userrock == true && aiscissors == true)
+                else if (userrock && aiscissors)
                 {
-                    Console.WriteLine("\nUser wins! Congratulations!");
+                Console.WriteLine("Scissors");
+                Console.WriteLine("\nUser wins! Congratulations!");
                 }
-                else if (userpaper == true && airock == true)
+                else if (userpaper && airock)
                 {
-                    Console.WriteLine("\nUser wins! Congratulations!");
+                Console.WriteLine("Rock");
+                Console.WriteLine("\nUser wins! Congratulations!");
                 }
-                else if (userscissors == true && aipaper == true)
+                else if (userscissors && aipaper)
                 {
-                    Console.WriteLine("\nUser wins! Congratulations!");
+                Console.WriteLine("Paper");
+                Console.WriteLine("\nUser wins! Congratulations!");
                 }
                 else
                 {

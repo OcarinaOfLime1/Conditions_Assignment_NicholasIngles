@@ -136,9 +136,11 @@ else if (input == "5")
     Random aimove = new Random();
     Console.WriteLine(aimove.Next(3));
     if (aimove = 0)
+        
+    Random rand = new Random();
+    int variable = rand.Next(0, 10);
 
 
-    
 }
 else
 {
